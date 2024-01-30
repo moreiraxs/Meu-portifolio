@@ -1,0 +1,213 @@
+/* ----- ESTILO GERAL ----- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+p, h1, h2{
+  color: #fff
+}
+span{
+  color: #00ff08;
+}
+.minhafoto2{
+  border-radius: 10px;
+  width: 300px;
+  height:400px;
+}
+
+body{
+  background-color:#000;
+  height: 100vh;
+}
+
+.flex{
+ display:flex;
+}
+
+.interface{
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+/*   ESTILO DO CABEÇALHO   */
+
+header{
+  padding: 40px 4%; 
+}
+
+header > .interface{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header p{
+  color: #00ff08;
+  font-family: "Poppins", sans-serif;
+  font-size:25px;
+  font-weight: 700;
+  font-style: italic;
+  cursor: pointer;
+}
+header a{
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+header a:hover{
+  color: #fff;
+  transform:scale(1.05);
+}
+
+header nav ul{
+  list-style-type: none;
+}
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .btn-contato button{
+  padding: 10px 40px;
+  font-size:18px;
+  font-weigth:600;
+  background-color: #00ff08;
+  border:0;
+  border-radius: 30px;
+  cursor: pointer
+}
+header .btn-contato button:hover{
+  box-shadow: 0px 0px 8px #00ff08
+}
+
+/*ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+  padding:40px 4%;
+}
+
+section.topo-do-site .flex{
+  align-items:center;
+  justify-content:center;
+  gap:90px;
+}
+
+.topo-do-site h1{
+ font-size:38px;
+ line-height: 40px;
+}
+
+.topo-do-site h1 span{
+  color: #00ff08
+}
+
+.topo-do-site .txt-topo-site p{
+  margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+  position:relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+  0%{
+    top:0;
+  }
+  100%{
+    top:30px;
+  }
+}
+
+/* FIM ESTILO DO TOPO DO SITE */
+
+/* INICIO DAS ESPECIALIDADES */
+
+h2.titulo{
+  font-size: 38px;
+  text-align: center;
+}
+h2.titulo span{
+ color: #00ff08;
+}
+.minhafoto{
+  height:300px;
+  width:300px;
+  border-radius: 50%;
+}
+
+
+.especialidades{
+  padding: 40px 4%
+}
+
+.especialidades .flex{
+  gap: 60px
+}
+.especialidades .especialidades-box{
+  color: #fff;
+  padding: 10px;
+  margin-top: 45px;
+  border-radius:20px;
+  transition: 0.2s 
+}
+
+
+.especialidades-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff78
+}
+.especialidades-box .bi{
+  font-size:70px;
+  color: #00ff08;
+  padding
+}
+
+.especialidades-box h3{
+  font-size: 28px;
+  margin: 15px 0px;
+  color: #fff
+}
+
+/* FIM DAS ESPECIALIDADES */
+
+/* INICIO SOBRE MIM */
+section.sobre{
+  padding:80px 4%;
+}
+
+section.sobre .flex{
+  align-items:center;
+  gap: 60px;
+}
+.sobre .txt-sobre h2{
+  font-size:40px;
+  line-height: 40px;
+}
+
+.sobre .txt-sobre h2 span{
+  display: block;
+}
+
+.sobre .txt-sobre p{
+  margin: 20px 0;
+  text-align:justify;
+}
+
+
+.sobre .txt-sobre .btn-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color:#00ff08;
+  font-size: 25px;
+  cursor:pointer;
+  transition: .2s;
+  margin: 0 5px
+}
+.sobre .txt-sobre .btn-social button:hover{
+  box-shadow:0px 0px 8px #00ff08;
+  transform:scale(1.05);
+}
+
